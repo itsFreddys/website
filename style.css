@@ -123,10 +123,10 @@ nav ul li a:hover{
 
 }
 /* ------------about----------- */
-#about{
+/* #about{ */
     /* padding: 80px 10%; */
     /* display: flex; */
-}
+/* } */
 .row{
     display: flex;
     justify-content: space-between;
