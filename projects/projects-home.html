@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <title>Jose's Portfolio</title>
+    <link rel="stylesheet" href="projects-style.css">
+    <script src="https://kit.fontawesome.com/661086e29a.js" crossorigin="anonymous"></script>
+    <!-- navbar -->
+    <script>
+        fetch("../navbar.html")
+            .then(response => response.text())
+            .then(data => document.body.insertAdjacentHTML("afterbegin", data));
+    </script>
+</head>
+<body>
+<!-- ------------projects---------- -->
+<div id="projects">
+    <div class="container" style="padding-top: 60px; margin-bottom: 10%;">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="../images/work-1.png">
+                <div class="layer">
+                    <h3>Android Health App</h3>
+                    <p>The app provides users with food recommendations tailored to their
+                        diet and health goals.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="../images/work-2.png">
+                <div class="layer">
+                    <h3>Columns Game</h3>
+                    <p>This application is a mock up of the game Columns.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="../images/work-1.png">
+                <div class="layer">
+                    <h3>Other project</h3>
+                    <p>Still need to figure out what to place here</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

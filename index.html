@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <title>Jose's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/661086e29a.js" crossorigin="anonymous"></script>
+    <!-- navbar -->
+    <script>
+        fetch("../navbar.html")
+            .then(response => response.text())
+            .then(data => document.body.insertAdjacentHTML("afterbegin", data));
+    </script>
+</head>
+<body>
+<!-- ------------header---------- -->
+<div id="header">
+    <div class="container" style="margin-bottom: 10%;">
+        <div class="header-text">
+            <h1 class="name">Hello, I'm<br>Jose Pantoja</h1>
+            <p class="header-title">A Computer Science Graduate from UC Irvine</p>
+             <div class="container" style="padding: 0;">
+                 <a href="projects/projects-home.html" class="header-button">
+                    Projects <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i>
+                </a>
+             </div>
+             <div class="container" style="padding: 0;">
+                <a href="https://github.com/itsFreddys" class="header-button">
+                   GitHub <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i>
+               </a>
+            </div>
+            <div class="container" style="padding: 0;">
+                <a href="https://www.linkedin.com/in/jpantojamo/" class="header-button">
+                   LinkedIn <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i>
+               </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------about------------ -->
+<div id="about">
+    <div class="container" style="margin-bottom: 10%;">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/my-photo2.png">
+                <div class="container" style="padding: 0; margin-top:5%;">
+                    <a href="bio.html" class="about-button">
+                       Bio <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i>
+                   </a>
+                </div>
+                <div class="container" style="padding: 0; margin-top:5%;">
+                    <a href="resume.html" class="about-button">
+                       Resume <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i>
+                   </a>
+                </div>
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm a software engineer with expertise in full-stack development, AI, and 
+                    embedded systems. I build high-performance applications, optimize algorithms, 
+                    and create custom data structures. Passionate about problem-solving, learning, 
+                    and exploring new technologies.</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('languages')">Languages</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Full-Stack</span><br>Designing Front-end and Back-end for Web/App</li>
+                        <li><span>Cloud & DevOps</span><br>Scalable and secure deployments with AWS, Docker, Kubernetes</li>
+                        <li><span>AI & Machine Learning</span><br>Building ML models for recommendation systems and Deep learning</li>
+                        <li><span>Embedded Systems</span><br>Experienced with microcontrollers such as Arduino, Raspberry Pi, and Tiva C</li>
+                    </ul>        
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2025</span><br>Full-Stack Developer for e-commerce website</li>
+                        <li><span>2024</span><br>Developer on Web Crawler & Search Engine</li>
+                        <li>AI developer for deep learning AI agent on retro game</li>
+                        <li>Cloud & Database developer for health class project</li>
+                        <li><span>2023</span><br>Data structures development</li>
+                    </ul>        
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022-2024</span><br>UC Irivine Computer Science B.S.</li>
+                        <li><span>2018-2022</span><br>Riverside Community College Computer Science A.S.</li>
+                        <li><span>2014</span><br>Vista Del Lago High School H.S. diploma</li>
+                    </ul>        
+                </div>
+                <div class="tab-contents" id="languages">
+                    <ul>
+                        <li><span>Proficient</span><br>Java | Python | C | C++ | JavaScript | SQL | HTML | CSS | Bash</li>
+                        <li><span>Familiar</span><br>TypeScript, Kotlin</li>
+
+                    </ul>        
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------projects---------- -->
+<div id="projects">
+    <div class="container" style="margin-bottom: 10%;">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Android Health App</h3>
+                    <p>The app provides users with food recommendations tailored to their
+                        diet and health goals.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Columns Game</h3>
+                    <p>This application is a mock up of the game Columns.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Other project</h3>
+                    <p>Still need to figure out what to place here</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------Contact---------- -->
+<div id="contact">
+    <div class="container">
+        <div class="contact-text">
+            <h1 class="sub-title">Contact Me</h1>
+            <p class="interest-title">A Computer Science Student at UC Irvine</p>
+            <h2 class="contact-button">connect</h2>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tab){
+        for(tablink of tablinks){
+            // this will remove the highlight on the tab
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            // this will remove what ever content is currently displayed
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tab).classList.add("active-tab");
+    }
+
+</script>
+
+</body>
+</html>

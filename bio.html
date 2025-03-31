@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <title>Jose's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/661086e29a.js" crossorigin="anonymous"></script>
+    <!-- navbar -->
+    <script>
+        fetch("../navbar.html")
+            .then(response => response.text())
+            .then(data => document.body.insertAdjacentHTML("afterbegin", data));
+    </script>
+</head>
+<body style="margin-bottom: 10%;">
+<!-- ------------bio---------- -->
+
+<section id="about">
+    <div class="container" style="padding-top: 60px; margin-bottom: 10%;">
+        <h1 class="sub-title">About Me</h1>
+        <!-------------- Intro ------------------>
+        <p>
+            I'm <strong style="color:rgb(231, 231, 231);">Jose Pantoja Morales</strong>, a Computer Science graduate from UC Irvine with 
+            a specialization in <strong>Artificial Intelligence and Information</strong>. 
+            I have a strong foundation in software engineering, backed by hands-on experience 
+            in full-stack development, cloud computing, and machine learning. My projects showcase my 
+            ability to build high-performance, scalable applications, optimize system efficiency, and 
+            develop AI-driven solutions.
+        </p>
+        <!-------------- technical skills ------------------>
+        <div>
+            <h2 style="margin-top:5%;">Technical Skills</h2>
+            <ul style="margin-left:5%;">
+                <li style="margin-top:1%;"><strong>Full-Stack Development: </strong>
+                    <p>Proficient in front-end and back-end technologies, including React, Java, JavaScript, Python, and SQL.</p>
+                </li>
+                <li style="margin-top:2%;"><strong>Cloud & DevOps: </strong>
+                    <p>Experienced in AWS, Docker, and Kubernetes, ensuring scalable and secure deployments.</p>
+                </li>
+                <li style="margin-top:2%;"><strong>AI & Machine Learning:</strong><p>
+                    Applied AI techniques to build intelligent recommendation systems, search engines, and deep learning for AI Agents.</p>
+                </li>
+                <li style="margin-top:2%;"><strong>Data Structures & Algorithms:</strong>
+                    <p>Built custom data structures from scratch and optimized algorithmic performance for large-scale applications.</p>
+                </li>
+                <li style="margin-top:2%;"><strong>Embedded Systems:</strong>
+                    <p>Experienced with microcontrollers such as Arduino, Raspberry Pi, and Tiva C for hardware-software integration.</p>
+                </li>
+                <li style="margin-top:2%;"><strong>Performance Optimization:</strong>
+                    <p>Skilled in improving search efficiency, database queries, and large-scale system performance.</p>
+                </li>
+            </ul>
+            <!-------------- programming languages ------------------>
+            <h2 style="margin-top:5%;">Programming Languages</h2>
+            <ul style="margin-left:5%;">
+                <li style="margin-top:2%;"><strong>Proficient:</strong>
+                    <p>Java | Python | C | C++ | JavaScript | SQL | HTML | CSS | Bash</p>
+                </li>
+                <li style="margin-top:2%;"><strong>Familiar:</strong> 
+                    <p>TypeScript, Kotlin</p>
+                </li>
+            </ul>
+            <!-------------- project highlights ------------------>
+            <h2 style="margin-top:5%;">Notable Projects</h2>
+            <ul style="margin-left:5%;">
+                <li style="margin-top:2%;"><strong>Fabflix: </strong>
+                    <p>A movie e-commerce platform with optimized search, cloud deployment, and robust security features.</p>
+                </li>
+                <li style="margin-top:2%;"><strong>ZotSearch: </strong>
+                    <p>A custom search engine using PageRank and cosine similarity for accurate information retrieval.</p>
+                </li>
+                <li style="margin-top:2%;"><strong>Health App: </strong>
+                    <p>An AI-powered mobile app that provides personalized food recommendations.</p>
+                </li>
+                <li style="margin-top:2%;"><strong>Data Structures: </strong>
+                    <p>In C++, I have implemented custom data structures, including Linked Lists, Skip Lists, AVL Trees, 
+                        Hash Maps, Heaps, and Graphs, optimizing their performance for various computational tasks.</p>
+                </li>
+            </ul>
+        </div>
+        <!-------------- beyond coding ------------------>
+        <div style="margin-top:5%;">
+            <h2 style="margin-bottom:2%;">Beyond Coding</h2>
+            <p>
+                Outside of software engineering, I enjoy engaging in activities that challenge my problem-solving skills 
+                and creativity. I love <strong>video games</strong> for their strategic depth, <strong>mountain biking 
+                and hiking</strong> for their physical and mental endurance, attending <strong>music</strong> events, 
+                and <strong>exploring new food spots</strong> as a way to experience diverse cultures. My interests in 
+                <strong>math and physics</strong> often inspire my approach to optimization and algorithm design.
+            </p>
+
+            <p>
+                <br>I also thrive in collaborative environments, whether in group projects, or mentoring 
+                others in coding. My ability to break down complex problems and work effectively within a team makes 
+                me an asset in any development setting.
+            </p>
+        </div>
+        <!-------------- lets connect ------------------>
+        <div style="margin-top:5%;">
+            <h2>Let's connect!</h2>
+            <p>I'm always looking for opportunities to apply my skills in innovative projects.</p>
+            <div class="container" style="padding: 0; margin-top:5%;">
+                <a href="../index.html#contact" class="about-button">
+                    Contact <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i>
+                </a>
+            </div>
+            <div class="container" style="padding: 0; margin-top:1%;">
+                <a href="resume.html" class="about-button">
+                    Resume <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+        
+</section>
+</body>
+</html>
