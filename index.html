@@ -9,13 +9,28 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/661086e29a.js" crossorigin="anonymous"></script>
     <!-- navbar -->
-    <script>
+    <!-- <script>
         fetch("../navbar.html")
             .then(response => response.text())
             .then(data => document.body.insertAdjacentHTML("afterbegin", data));
-    </script>
+    </script> -->
 </head>
 <body>
+    <div id="my-navbar">
+        <!-- <div class="container"> -->
+            <nav>
+                <label class="logo">Jose.</label>
+                <ul id="side-menu">
+                    <li><a href="../index.html#">Home</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#projects">Projects</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+        <!-- </div> -->
+    </div>
 <!-- ------------header---------- -->
 <div id="header">
     <div class="container" style="margin-bottom: 10%;">
@@ -108,8 +123,19 @@
 <!-- ------------projects---------- -->
 <div id="projects">
     <div class="container" style="margin-bottom: 10%;">
-        <h1 class="sub-title">Projects</h1>
+        <h1 class="sub-title">Projects
+            <a style="margin-left:5%; font-size:1.5rem;" href="projects/projects-home.html">See More <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </h1>
         <div class="work-list">
+            <div class="work">
+                <img src="images/work3.png">
+                <div class="layer">
+                    <h3>Fabflix</h3>
+                    <p>Fabflix is an e-commerce movie site that allows users to browse and purchase movies. 
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
             <div class="work">
                 <img src="images/work-1.png">
                 <div class="layer">
@@ -124,7 +150,7 @@
                 <img src="images/work-2.png">
                 <div class="layer">
                     <h3>Columns Game</h3>
-                    <p>This application is a mock up of the game Columns.</p>
+                    <p>This app is a mock up of the game Columns.</p>
                     <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
@@ -142,16 +168,47 @@
 <!-- ------------Contact---------- -->
 <div id="contact">
     <div class="container">
-        <div class="contact-text">
-            <h1 class="sub-title">Contact Me</h1>
-            <p class="interest-title">A Computer Science Student at UC Irvine</p>
-            <h2 class="contact-button">connect</h2>
-            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        
+        <div class="row">
+            <div class="contact-left">
+                <div class="contact-text">
+                    <h1 class="sub-title">Contact Me</h1>
+                </div>
+                <p style="margin-top: 5%;">
+                    <i class="fa-solid fa-envelope" style="margin-right: 0.25rem;"></i>
+                    jpantoja.dev@gmail.com
+                </p>
+                <p>
+                    <i class="fa-solid fa-phone" style="margin-right: 0.25rem;"> </i>
+                    (951) 796-4377
+                </p>
+                <div class="icon-row">
+                    <a href= "https://github.com/itsFreddys" class="icon"> 
+                        <i class="fa-brands fa-github fa-2xl"></i>
+                    </a><a href= "https://www.linkedin.com/in/jpantojamo/" class="icon"> 
+                        <i class="fa-brands fa-linkedin fa-2xl"></i>
+                    </a>
+                </div>
+                <div class="container" style="padding: 0; margin-top:5%; display:inline-block;">
+                    <a href="resume.html" class="about-button">
+                        Resume <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input id="name" name="Name" placeholder="Name" type="text" class="contact-input" required>
+                    <input id="email" name="email" placeholder="Email" type="email" class="contact-input" required>
+                    <textarea id="message" name="Message" rows="6" placeholder="Your Message..." class="contact-input"></textarea>
+                    <button type="submit" class="contact-button">Submit</button>
+                </form>
+                
+            </div>
         </div>
     </div>
 </div>
 
-
+<!-- Scripts -->
 <script>
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
@@ -170,6 +227,17 @@
         document.getElementById(tab).classList.add("active-tab");
     }
 
+</script>
+<!-- menu script -->
+<script>
+    var menu = document.getElementById("side-menu");
+    
+    function openmenu(){
+        menu.style.right = "0";
+    }
+    function closemenu(){
+        menu.style.right = "-50%";
+    }
 </script>
 
 </body>

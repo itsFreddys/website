@@ -9,13 +9,28 @@
     <link rel="stylesheet" href="projects-style.css">
     <script src="https://kit.fontawesome.com/661086e29a.js" crossorigin="anonymous"></script>
     <!-- navbar -->
-    <script>
+    <!-- <script>
         fetch("../navbar.html")
             .then(response => response.text())
             .then(data => document.body.insertAdjacentHTML("afterbegin", data));
-    </script>
+    </script> -->
 </head>
 <body>
+    <div id="my-navbar">
+        <!-- <div class="container"> -->
+            <nav>
+                <label class="logo">Jose.</label>
+                <ul id="side-menu">
+                    <li><a href="../index.html#">Home</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#projects">Projects</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+        <!-- </div> -->
+    </div>
 <!-- ------------projects---------- -->
 <div id="projects">
     <div class="container" style="padding-top: 60px; margin-bottom: 10%;">
@@ -53,4 +68,15 @@
 
 
 </body>
+<!-- menu script -->
+<script>
+    var menu = document.getElementById("side-menu");
+    
+    function openmenu(){
+        menu.style.right = "0";
+    }
+    function closemenu(){
+        menu.style.right = "-50%";
+    }
+</script>
 </html>

@@ -234,3 +234,102 @@ nav ul li a:hover{
     border-radius: 10px;
     display: block;
 }
+
+nav .fas{
+    display: none;
+}
+@media only screen and (max-width: 930px){
+    .about-col-1{
+        /* picture will get 35 percent of width */
+        margin: 5px auto;
+    }
+    .about-col-1 img{
+        /* picture will get 35 percent of width */
+        display: flex;
+        width: 300px;
+        margin: 0 auto;
+    }
+    #about .row{
+        display: block;
+    }
+    #about .about-button{
+        margin-top: -3%;
+    }
+}
+@media only screen and (max-width: 600px){
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #373737;
+        position: fixed;
+        top: 0;
+        right: -50%;
+        width: 50%;
+        height: 100%;
+        padding-top: 50px;
+        transition: .5s ease;
+        /* display: none; */
+    }
+    nav ul li{
+        display: block;
+        margin: 13%;
+        /* font-size: 35px; */
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+    }
+    nav ul .fas:checked{
+        right: 0;
+    }
+    .name{
+        font-size: 3rem;
+    }
+    .container {
+        width: 100%;
+        margin-top: 2%;
+    }
+    body{
+        width: fit-content;
+    }
+    #about .about-button{
+        margin-top: -3%;
+    }
+    .about-col-1{
+        /* picture will get 35 percent of width */
+        flex-basis:40%;
+        margin: 5px auto;
+    }
+    .about-col-1 img{
+        /* picture will get 35 percent of width */
+        display: flex;
+        width: 300px;
+        margin: 0 auto;
+    }
+    .row{
+        display: block;
+    }
+
+    /* .work-list{
+        display: block;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 40px;
+        margin-top: 50px;
+    } */
+    .work img{
+        width: 80%;
+        margin: 0px auto;
+    }
+    .icon-row{
+        margin-bottom: -17%;
+    }
+    #contact .about-button{
+        margin-bottom: 5%;
+    }
+
+
+}

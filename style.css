@@ -233,4 +233,213 @@ nav ul li a:hover{
     width: 100%;
     border-radius: 10px;
     display: block;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.work:hover img {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.work:hover .layer{
+    height: 100%;
+}
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0, 0, 0, 0.853), #373737);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px 40px;
+    text-align: center;
+    transition: height 0.5s ease;
+}
+.layer h3{
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-top: 20%;
+    margin-bottom: 10%;
+}
+.layer p{
+    /* font-weight:normal; */
+    font-size: 1.2rem;
+    margin-top: 2%;
+    margin-bottom: 10%;
+}
+.layer a{
+    margin-top:20px;
+    color: #ff004f;
+    text-decoration: none;
+    background: white;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    line-height: 60px;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+}
+
+/* -----------contact--------- */
+.contact-left{
+    flex-basis: 40%;
+}
+
+.contact-left p {
+    margin-bottom: 1rem;
+}
+
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    border-radius: 7px;;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    resize: none;
+}
+.contact-right{
+    flex-basis: 55%;
+}
+.contact-button {
+    margin-top: 2%;
+    font-size: 1rem;
+    background-color: #ff004f;
+    color: #fff; /* Add text color */
+    text-align: center;
+    text-decoration: none;
+    display: flow;
+    padding: 15px;
+    width: 170px; /* Adjust width to fit content */
+    border: none; /* Remove border */
+    border-radius: 13px;
+    cursor: pointer; /* Add pointer cursor */
+    box-sizing: border-box;
+    transition: background-color 0.5s; /* Add transition effect */
+    /* margin-left: auto; */
+    margin-right: auto;
+}
+.contact-button:hover{
+    background-color: #90002e;
+}
+.icon-row {
+    margin-top: 15%;
+    margin-bottom: 10%;
+}
+.icon {
+    margin-right: 2rem;
+    color: #fff;
+    width: 3rem;
+    height: auto;
+}
+
+/* -----------------smaller screens --------------- */
+nav .fas{
+    display: none;
+}
+@media only screen and (max-width: 930px){
+    .about-col-1{
+        /* picture will get 35 percent of width */
+        margin: 5px auto;
+    }
+    .about-col-1 img{
+        /* picture will get 35 percent of width */
+        display: flex;
+        width: 300px;
+        margin: 0 auto;
+    }
+    #about .row{
+        display: block;
+    }
+    #about .about-button{
+        margin-top: -3%;
+    }
+}
+@media only screen and (max-width: 600px){
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #373737;
+        position: fixed;
+        top: 0;
+        right: -50%;
+        width: 50%;
+        height: 100%;
+        padding-top: 50px;
+        transition: .5s ease;
+        /* display: none; */
+    }
+    nav ul li{
+        display: block;
+        margin: 13%;
+        /* font-size: 35px; */
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+    }
+    nav ul .fas:checked{
+        right: 0;
+    }
+    .name{
+        font-size: 3rem;
+    }
+    .container {
+        width: 100%;
+        margin-top: 2%;
+    }
+    body{
+        width: fit-content;
+    }
+    #about .about-button{
+        margin-top: -3%;
+    }
+    .about-col-1{
+        /* picture will get 35 percent of width */
+        flex-basis:40%;
+        margin: 5px auto;
+    }
+    .about-col-1 img{
+        /* picture will get 35 percent of width */
+        display: flex;
+        width: 300px;
+        margin: 0 auto;
+    }
+    .row{
+        display: block;
+    }
+
+    /* .work-list{
+        display: block;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 40px;
+        margin-top: 50px;
+    } */
+    .work img{
+        width: 80%;
+        margin: 0px auto;
+    }
+    .icon-row{
+        margin-bottom: -17%;
+    }
+    #contact .about-button{
+        margin-bottom: 5%;
+    }
+    #connect .about-button{
+        margin-top: 3%;
+    }
+
 }
