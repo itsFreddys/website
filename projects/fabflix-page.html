@@ -82,4 +82,129 @@
                             alt="Slide 1">
                         </iframe>
                     </div>
-          
+                </div>
+                <div class="carousel-item">
+                    <div class="video-container">
+                        <iframe width="100%" height="400px" src="https://www.youtube.com/embed/kq43oI6DU58?si=7ItFPOON9UXNJwmf" 
+                            title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                            alt="Slide 2">
+                        </iframe>
+                    </div>
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" 
+                    data-bs-target="#project-carousel-vid" data-bs-slide="prev"
+                    style="background-color:black;"
+                    >
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" 
+                    data-bs-target="#project-carousel-vid" data-bs-slide="next"
+                    style="background-color:black;">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- photos -->
+        <div class="component">
+            <h3 class="inner-heading">Photos</h3>
+            <div id="project-carousel-photos" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#project-carousel-photos" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+                    <button type="button" data-bs-target="#project-carousel-photos" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+                    <button type="button" data-bs-target="#project-carousel-photos" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+                    <button type="button" data-bs-target="#project-carousel-photos" data-bs-slide-to="3" aria-label="Slide 4" class=""></button>
+                    <button type="button" data-bs-target="#project-carousel-photos" data-bs-slide-to="4" aria-label="Slide 5" class=""></button>
+                    <button type="button" data-bs-target="#project-carousel-photos" data-bs-slide-to="5" aria-label="Slide 6" class=""></button>
+                    <button type="button" data-bs-target="#project-carousel-photos" data-bs-slide-to="6" aria-label="Slide 7" class=""></button>
+                    <button type="button" data-bs-target="#project-carousel-photos" data-bs-slide-to="7" aria-label="Slide 8" class=""></button>
+
+                </div>
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="image-container">
+                        <img src="../images/fabflix/fabflix.png" class="d-block w-100" alt="Slide 1">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="image-container">
+                        <img src="../images/fabflix/fabflix-user-login.png" class="d-block w-100" alt="Slide 2">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="image-container">
+                        <img src="../images/fabflix/fabflix-dev-login.png" class="d-block w-100" alt="Slide 3">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="image-container">
+                        <img src="../images/fabflix/movies-list.png" class="d-block w-100" alt="Slide 4">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="image-container">
+                        <img src="../images/fabflix/single-star.png" class="d-block w-100" alt="Slide 5">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="image-container">
+                        <img src="../images/fabflix/fuzzy-search.png" class="d-block w-100" alt="Slide 6">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="image-container">
+                        <img src="../images/fabflix/dashboard-home.png" class="d-block w-100" alt="Slide 7">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="image-container">
+                        <img src="../images/fabflix/add-movie.png" class="d-block w-100" alt="Slide 8">
+                    </div>
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" 
+                    data-bs-target="#project-carousel-photos" data-bs-slide="prev"
+                    style="background-color:black;"
+                    >
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" 
+                    data-bs-target="#project-carousel-photos" data-bs-slide="next"
+                    style="background-color:black;">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="padding: 0; margin-top:5%;">
+        <a href="https://github.com/itsFreddys/fabflix/tree/jose-branch5" class="about-button">
+           GitHub <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i>
+       </a>
+       <a href="projects-home.html" class="about-button">
+        Projects <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i>
+        </a>
+    </div>
+</div>
+</div>
+
+</body>
+<!-- menu script -->
+<script>
+    var menu = document.getElementById("side-menu");
+    
+    function openmenu(){
+        menu.style.right = "0";
+    }
+    function closemenu(){
+        menu.style.right = "-50%";
+    }
+</script>
+</html>

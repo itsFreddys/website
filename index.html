@@ -31,36 +31,41 @@
             </nav>
         <!-- </div> -->
     </div>
+
+<div class="main-content-wrapper">
+
 <!-- ------------header---------- -->
-<div id="header">
-    <div class="container" style="margin-bottom: 10%;">
+<!-- <div class="container" style="margin-bottom: 10%; margin-top: 60px;"> -->
+    <div class="header">
         <div class="header-text">
             <h1 class="name">Hello, I'm<br>Jose Pantoja</h1>
             <p class="header-title">A Computer Science Graduate from UC Irvine</p>
-             <div class="container" style="padding: 0;">
-                 <a href="projects/projects-home.html" class="header-button">
-                    Projects <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i>
-                </a>
-             </div>
-             <div class="container" style="padding: 0;">
-                <a href="https://github.com/itsFreddys" class="header-button">
-                   GitHub <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i>
-               </a>
-            </div>
-            <div class="container" style="padding: 0;">
-                <a href="https://www.linkedin.com/in/jpantojamo/" class="header-button">
-                   LinkedIn <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i>
-               </a>
+            <div class="header-buttons">
+                <div class="container" style="padding: 0;">
+                    <a href="projects/projects-home.html" class="header-button">
+                       Projects <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i>
+                   </a>
+                </div>
+                <div class="container" style="padding: 0;">
+                   <a href="https://github.com/itsFreddys" class="header-button">
+                      GitHub <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i>
+                  </a>
+               </div>
+               <div class="container" style="padding: 0;">
+                   <a href="https://www.linkedin.com/in/jpantojamo/" class="header-button">
+                      LinkedIn <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i>
+                  </a>
+               </div>
             </div>
         </div>
     </div>
-</div>
+<!-- </div> -->
 <!-- ------------about------------ -->
 <div id="about">
-    <div class="container" style="margin-bottom: 10%;">
+    <div class="container" style="margin-bottom: 10%; margin-top: 30px;">
         <div class="row">
             <div class="about-col-1">
-                <img src="images/my-photo2.png">
+                <img src="images/misc/my-photo2.png">
                 <div class="container" style="padding: 0; margin-top:5%;">
                     <a href="bio.html" class="about-button">
                        Bio <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i>
@@ -123,52 +128,63 @@
 <!-- ------------projects---------- -->
 <div id="projects">
     <div class="container" style="margin-bottom: 10%;">
-        <h1 class="sub-title">Projects
-            <a style="margin-left:5%; font-size:1.5rem;" href="projects/projects-home.html">See More <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        </h1>
+        <div class="header-link">
+            <h1 class="sub-link">Projects
+                <a href="projects/projects-home.html" class="see-more-button">
+                    See More <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i>
+                </a> 
+            </h1>
+        </div>
         <div class="work-list">
-            <div class="work">
-                <img src="images/work3.png">
-                <div class="layer">
-                    <h3>Fabflix</h3>
-                    <p>Fabflix is an e-commerce movie site that allows users to browse and purchase movies. 
-                    </p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a class="project-btn" href="projects/fabflix-page.html">
+                <div class="work">
+                    <img src="images/fabflix/fabflix.png">
+                    <div class="layer">
+                        <h3>Fabflix</h3>
+                        <p>Fabflix is an e-commerce movie site that allows users to browse and purchase movies. 
+                        </p>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
                 </div>
-            </div>
-            <div class="work">
-                <img src="images/work-1.png">
-                <div class="layer">
-                    <h3>Android Health App</h3>
-                    <p>The app provides users with food recommendations tailored to their
-                        diet and health goals.
-                    </p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </a>
+            <a class="project-btn" href="projects/zotzotgo-page.html">
+                <div class="work">
+                    <img src="images/zotzotgo/zotzotgo.png" style="object-fit: cover;">
+                    <div class="layer">
+                        <h3>ZotZotGo</h3>
+                        <p>A Search Engine designed to search through UCI web domains.</p>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
                 </div>
-            </div>
-            <div class="work">
-                <img src="images/work-2.png">
-                <div class="layer">
-                    <h3>Columns Game</h3>
-                    <p>This app is a mock up of the game Columns.</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </a>
+            <a class="project-btn" href="projects/zothlth-page.html">
+                <div class="work">
+                    <img src="images/zothealth/zothealth.png">
+                    <div class="layer">
+                        <h3>Android Health App</h3>
+                        <p>The app provides users with food recommendations tailored to their
+                            diet and health goals.
+                        </p>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
                 </div>
-            </div>
-            <div class="work">
-                <img src="images/work-1.png">
-                <div class="layer">
-                    <h3>Other project</h3>
-                    <p>Still need to figure out what to place here</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </a>
+            <a class="project-btn" href="projects/columns-page.html">
+                <div class="work">
+                    <img src="images/columns/columns.png">
+                    <div class="layer">
+                        <h3>Columns Game</h3>
+                        <p>This program is a mock up of the game Columns.</p>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
     </div>
 </div>
 <!-- ------------Contact---------- -->
 <div id="contact">
     <div class="container">
-        
         <div class="row">
             <div class="contact-left">
                 <div class="contact-text">
@@ -196,18 +212,18 @@
                 </div>
             </div>
             <div class="contact-right">
-                <form>
+                <form name="submit-to-google-sheet">
                     <input id="name" name="Name" placeholder="Name" type="text" class="contact-input" required>
-                    <input id="email" name="email" placeholder="Email" type="email" class="contact-input" required>
+                    <input id="email" name="Email" placeholder="Email" type="email" class="contact-input" required>
                     <textarea id="message" name="Message" rows="6" placeholder="Your Message..." class="contact-input"></textarea>
                     <button type="submit" class="contact-button">Submit</button>
                 </form>
-                
             </div>
         </div>
     </div>
 </div>
 
+</div>
 <!-- Scripts -->
 <script>
     var tablinks = document.getElementsByClassName("tab-links");
@@ -239,6 +255,18 @@
         menu.style.right = "-50%";
     }
 </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwW0wn61nXL_CZhuxomW4MX9w4qgSaEcE-zjesg2WwHvCeHpkzPIQ9YwaeYnLrs54Ij/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 
 </body>
 </html>

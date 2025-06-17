@@ -11,7 +11,8 @@ html {
 }
 body{
     /* background: #080808; */
-    background: #030303;
+    /* background: #030303; */
+    background: #212121;
     color: #fff;
     margin-bottom: 10%;
 }
@@ -20,13 +21,7 @@ p{
     letter-spacing: 1px;
     font-family: sans-serif;
 }
-#header{
-    width: 100%;
-    height: 100vh;
-    background-image: url(images/laptop.avif);
-    background-size: cover;
-    background-position: center;
-}
+
 .sub-title{
     font-size: 2.5rem;
 }
@@ -77,13 +72,29 @@ nav ul li a:hover{
     
 }
 /* -----------header----------- */
+.header{
+    width: 90%;
+    margin: 0 auto;
+    height: 900px;
+    background-image: url(images/misc/bg1.png);
+    background-size: cover;
+    background-position: top right;
+    border-radius: 10%;
+    margin-bottom: 10%; 
+    margin-top: 72px;
+}
 .header-text{
-    margin-top: 25%;
+    /* margin-top: 25%; */
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     /* position: absolute; */
     position: relative;
     width: 100%;
+    height: 100%;
     font-size: 30px;
+    margin: auto auto;
 }
 .name{
     /* margin-top: 22%; */
@@ -100,7 +111,8 @@ nav ul li a:hover{
 .header-button {
     margin-top: 2%;
     font-size: 1.2rem;
-    background-color: #0063cd;
+    /* background-color: #0063cd; */
+    background-color: #002f62;
     /* background-color: #ff004f; */
     color: #fff; /* Add text color */
     text-align: center;
@@ -118,9 +130,12 @@ nav ul li a:hover{
     margin-right: auto;
 }
 .header-button:hover{
-    background-color: #003166;
+    background-color: #001e3e;
     /* background-color: #90002e; */
 
+}
+.header-buttons{
+    margin-top: 4rem;
 }
 /* ------------about----------- */
 /* #about{ */
@@ -167,7 +182,8 @@ nav ul li a:hover{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    /* background: #ff004f; */
+    background: #287dda;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -181,7 +197,8 @@ nav ul li a:hover{
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color: #b54769;
+    /* color: #b54769; */
+    color: #4385cc;
     font-size: 15px;
     font-weight: 600;
 }
@@ -194,7 +211,8 @@ nav ul li a:hover{
 .about-button {
     margin-top: 2%;
     font-size: 1rem;
-    background-color: #ff004f;
+    /* background-color: #ff004f; */
+    background-color: #002f62;
     color: #fff; /* Add text color */
     text-align: center;
     text-decoration: none;
@@ -210,13 +228,58 @@ nav ul li a:hover{
     margin-right: auto;
 }
 .about-button:hover{
-    background-color: #90002e;
+    /* background-color: #90002e; */
+    background-color: #001f41;
 }
 /* ----------projects---------- */
 #projects{
     /* padding: 50px 10%; */
-    font-size: 30px;
+    font-size: 1.5rem;
     /* display: flex; */
+}
+.see-more-button{
+    font-size: 1rem;
+    /* background-color: #ff004f; */
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px 50px;
+    width: fit-content;
+    height: 60px;
+    display: flex;
+    border-width: 2px;
+    border-style: solid;
+    /* border-color: #90002e; */
+    /* border-color: #002f62; */
+    border-color: #4385cc;
+    border-radius: 13px;
+    cursor: pointer;
+    margin: auto 0;
+    margin-left:20px;
+    box-sizing: border-box;
+    transition: background-color 0.5s;
+    align-items: center;
+}
+.see-more-button:hover{
+    /* background-color: #90002e; */
+    /* background-color: #002f62; */
+    background-color: #4385cc;
+}
+.see-more-button i{
+    margin-left: 5px;
+}
+.header-link{
+    display: flex;
+    flex-direction: column;
+}
+.sub-link {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: normal;
 }
 .work-list{
     display: grid;
@@ -228,9 +291,15 @@ nav ul li a:hover{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    height: 0;
+    padding-bottom: 130%;
 }
 .work img{
     width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
     border-radius: 10px;
     display: block;
     object-fit: cover;
@@ -262,18 +331,36 @@ nav ul li a:hover{
 .layer h3{
     font-size: 1.6rem;
     font-weight: 500;
-    margin-top: 20%;
-    margin-bottom: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 .layer p{
     /* font-weight:normal; */
     font-size: 1.2rem;
-    margin-top: 2%;
-    margin-bottom: 10%;
+    /* margin-top: 2%; */
+    margin-bottom: 5%;
 }
 .layer a{
     margin-top:20px;
-    color: #ff004f;
+    /* color: #ff004f; */
+    color: #002f62;
+    text-decoration: none;
+    background: white;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    line-height: 60px;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+}
+.project-btn {
+    color: white;
+
+}
+.project-btn i{
+    margin-top:20px;
+    /* color: #ff004f; */
+    color: #002f62;
     text-decoration: none;
     background: white;
     border-radius: 50%;
@@ -306,6 +393,9 @@ form input, form textarea{
     margin: 15px 0;
     color: #fff;
     resize: none;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #424242;
 }
 .contact-right{
     flex-basis: 55%;
@@ -313,7 +403,8 @@ form input, form textarea{
 .contact-button {
     margin-top: 2%;
     font-size: 1rem;
-    background-color: #ff004f;
+    /* background-color: #ff004f; */
+    background-color: #002f62;
     color: #fff; /* Add text color */
     text-align: center;
     text-decoration: none;
@@ -329,7 +420,8 @@ form input, form textarea{
     margin-right: auto;
 }
 .contact-button:hover{
-    background-color: #90002e;
+    /* background-color: #90002e; */
+    background-color: #001e3f;
 }
 .icon-row {
     margin-top: 15%;
@@ -363,6 +455,12 @@ nav .fas{
     #about .about-button{
         margin-top: -3%;
     }
+    #contact .about-button{
+        margin-bottom: 5%;
+    }
+    #connect .about-button{
+        margin-top: 2%;
+    }
 }
 @media only screen and (max-width: 600px){
     nav .fas{
@@ -393,6 +491,10 @@ nav .fas{
     }
     nav ul .fas:checked{
         right: 0;
+    }
+    .header {
+        width: 100%;
+        border-radius: 0;
     }
     .name{
         font-size: 3rem;
@@ -429,7 +531,7 @@ nav .fas{
         margin-top: 50px;
     } */
     .work img{
-        width: 80%;
+        width: 100%;
         margin: 0px auto;
     }
     .icon-row{
@@ -442,4 +544,12 @@ nav .fas{
         margin-top: 3%;
     }
 
+}
+
+.main-content-wrapper{
+    max-width: 1200px;
+
+    margin: 0 auto;
+    /* padding: 0 20px; */
+    box-sizing: border-box;
 }
