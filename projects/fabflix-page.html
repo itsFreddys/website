@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <title>Jose's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="projects-style.css">
+    <script src="https://kit.fontawesome.com/661086e29a.js" crossorigin="anonymous"></script>
+    <!-- navbar -->
+    <!-- <script>
+        fetch("../navbar.html")
+            .then(response => response.text())
+            .then(data => document.body.insertAdjacentHTML("afterbegin", data));
+    </script> -->
+</head>
+<body>
+    <div id="my-navbar">
+        <!-- <div class="container"> -->
+            <nav>
+                <label class="logo">Jose.</label>
+                <ul id="side-menu">
+                    <li><a href="../index.html#">Home</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#projects">Projects</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+        <!-- </div> -->
+    </div>
+<div class="main-content-wrapper">
+
+<!-- ------------projects---------- -->
+<div id="main-project">
+    <div class="container" style="padding-top: 60px; margin-bottom: 10%;">
+        <!------------------Project 1 ------------------->
+        <h1 class="sub-title">Fabflix
+            <span class="project-tools">Java | JavaScript | HTML | CSS | MySQL | AWS | Docker | Kubernetes | JMeter</span>
+        </h1>
+        <div class="component">
+            <h3 class="inner-heading">Description</h3>
+            <p class="description">Fabflix is a high-performance movie e-commerce site I co-created, designed to deliver an exceptional experience 
+                for finding and buying movies. It features intelligent search, a responsive interface, and a robust cloud backend for seamless operation.
+            </p>
+            <p class="note" style="color:#b44453; font-size:20px;">Note: Movies do not have cover art due to inefficient data source.</p>
+        </div>
+
+        <!-- description -->
+        <div class="component">
+            <h3 class="inner-heading">My Tasks</h3>
+            <ul>
+                <li>Engineered a high-performance movie e-commerce platform, enabling seamless browsing, searching, and purchasing of movies with a responsive UI.</li>
+                <li>Developed a secure developer dashboard for administrative use, allowing employees to access metadata and manage the catalog by adding movies, stars, and genres.</li>
+                <li>Architected and deployed a scalable cloud infrastructure on AWS, leveraging Docker and Kubernetes for containerization and orchestration.</li>
+                <li>Enhanced search efficiency with Full-Text Search, Autocomplete, and Fuzzy Search, delivering real-time, intelligent search capabilities</li>
+                <li>Optimized database performance by implementing Prepared Statements, Stored Procedures, and XML Parsing, reducing query execution time.</li>
+                <li>Strengthened security and reliability by enforcing HTTPS, reCAPTCHA, cookies, and master-slave database replication for load balancing.</li>
+                <li>Conducted large-scale performance testing with JMeter, identifying bottlenecks and optimizing system throughput for peak traffic loads.</li>
+            </ul>
+        </div>
+        <!-- video portion -->
+        <div class="component">
+            <h3 class="inner-heading">Videos</h3>
+            <div id="project-carousel-vid" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#project-carousel-vid" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+                    <button type="button" data-bs-target="#project-carousel-vid" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+                </div>
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="video-container">
+                        <iframe width="100%" height="400px" src="https://www.youtube.com/embed/1czY8dCupWs?si=-8-2wjzbLR8eSJBy" 
+                            title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                            alt="Slide 1">
+                        </iframe>
+                    </div>
+          
